@@ -16,7 +16,7 @@ EntertainCMS is a **completely free**, professional-grade booking and contract m
 
 As entertainers, we've all been there:
 - 📝 **Contract Chaos**: Juggling emails, phone calls, and sticky notes
-- 💸 **Expensive Software**: Paying $50-200/month for features we don't need
+- 💸 **Expensive Software**: Paying £30-150/month for features we don't need
 - 🤹 **Double Bookings**: The nightmare that keeps us awake at night
 - 📧 **Unprofessional Communications**: Email chains that make us look amateur
 
