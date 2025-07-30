@@ -1,0 +1,454 @@
+/* Entertainer CMS Pro Admin Styles */
+
+.ecms-dashboard {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.ecms-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ecms-stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #0073aa;
+}
+
+.ecms-stat-card h3 {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0073aa;
+    margin: 0;
+}
+
+.ecms-dashboard-widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ecms-widget {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ecms-widget h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    color: #333;
+}
+
+.ecms-event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ecms-event-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ecms-event-list li:last-child {
+    border-bottom: none;
+}
+
+/* Calendar Styles */
+#ecms-calendar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.fc-event {
+    border: none !important;
+    border-radius: 4px !important;
+}
+
+.ecms-event-pending {
+    background-color: #f39c12 !important;
+}
+
+.ecms-event-confirmed {
+    background-color: #27ae60 !important;
+}
+
+.ecms-event-completed {
+    background-color: #95a5a6 !important;
+}
+
+/* Modal Styles */
+.ecms-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.ecms-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.ecms-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.ecms-close:hover {
+    color: #000;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0,115,170,0.1);
+}
+
+.form-actions {
+    margin-top: 20px;
+    text-align: right;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.form-actions .button {
+    margin-left: 10px;
+}
+
+/* Compatibility Check Styles */
+.ecms-compatibility-results {
+    margin-top: 20px;
+}
+
+.compatibility-section {
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.compatibility-section h2 {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.compatibility-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.compatibility-item:last-child {
+    border-bottom: none;
+}
+
+.compatibility-item.pass {
+    background-color: #f8fff8;
+    border-left: 4px solid #27ae60;
+}
+
+.compatibility-item.fail {
+    background-color: #fff8f8;
+    border-left: 4px solid #e74c3c;
+}
+
+.status-icon {
+    font-size: 18px;
+    margin-right: 15px;
+    min-width: 24px;
+}
+
+.check-name {
+    font-weight: 600;
+    min-width: 200px;
+    color: #333;
+}
+
+.check-details {
+    flex: 1;
+    color: #666;
+    margin-left: 20px;
+}
+
+.recommendation {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #856404;
+}
+
+.compatibility-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Form Grid Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-grid .form-row {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ecms-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ecms-dashboard-widgets {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ecms-modal-content {
+        margin: 10% auto;
+        width: 95%;
+    }
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.confirmed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-badge.completed {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+.status-badge.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Table Styles */
+.ecms-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ecms-table th,
+.ecms-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ecms-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.ecms-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Loading States */
+.ecms-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error Messages */
+.ecms-notice {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.ecms-notice.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.ecms-notice.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.ecms-notice.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+/* Action Buttons */
+.ecms-action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ecms-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s ease;
+}
+
+.ecms-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ecms-btn.primary {
+    background-color: #0073aa;
+    color: white;
+}
+
+.ecms-btn.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.ecms-btn.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.ecms-btn.danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Progress Bars */
+.ecms-progress {
+    width: 100%;
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.ecms-progress-bar {
+    height: 100%;
+    background-color: #0073aa;
+    transition: width 0.3s ease;
+}
+
+/* Calendar Event Tooltips */
+.fc-event-title {
+    font-weight: 600;
+}
+
+.fc-event-time {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
