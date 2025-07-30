@@ -58,7 +58,7 @@ As entertainers, we've all been there:
 This isn't some corporate software made by people who've never held a microphone. Every feature comes from real performer pain points and solutions.
 
 ### ☕ **Coffeeware Model**
-EntertainCMS is **completely free** to use. If it saves you time, stress, or money - and you want to keep development going - [buy us a coffee](https://github.com/sponsors/your-username). That's it. No subscriptions, no features locked behind paywalls, no guilt trips.
+EntertainCMS is **completely free** to use. If it saves you time, stress, or money - and you want to keep development going - [buy us a coffee](https://github.com/sponsors/chrispteemagician). That's it. No forced subscriptions, no features locked behind paywalls, no guilt trips. 
 
 ### 🌍 **Community Driven**
 The entertainment community is incredibly generous with knowledge and support. This project embodies that spirit - we all succeed when we help each other.
