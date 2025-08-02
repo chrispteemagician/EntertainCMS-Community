@@ -73,6 +73,19 @@ class EntertainCMS_Pro {
         add_filter('the_excerpt', 'do_shortcode');
         add_filter('the_content', 'do_shortcode', 11);
     }
+
+private function render_kudos_section() {
+    global $wpdb;
+    $user_email = get_option('admin_email');
+    $total_kudos = $wpdb->get_var($wpdb->prepare(
+        "SELECT SUM(points) FROM {$wpdb->prefix}ecms_kudos WHERE user_email = %s", $user_email
+    )) ?: 0;
+    
+    echo '<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; margin: 20px 0; border-radius: 10px;">
+        <h2 style="margin: 0;">🏆 Your Kudos Score: ' . $total_kudos . ' Points</h2>
+        <p style="opacity: 0.8;">Keep using the system to earn more kudos!</p>
+    </div>';
+}
     
     public function activate() {
 $this->update_database_schema();        
@@ -300,7 +313,8 @@ private function update_database_schema() {
                     <div class="stat-number"><?php echo $stats['total_events']; ?></div>
                 </div>
             </div>
-            
+            // Add after stats grid, before the Recent Events section:
+<?php $this->render_kudos_section(); ?>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
                 <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                     <h2>🎪 Recent Events</h2>
